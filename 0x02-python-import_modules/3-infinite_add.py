@@ -2,5 +2,7 @@
 import sys
 if __name__ == "__main__":
     args = sys.argv[1:]
-    total = sum(int(arg) for arg in args)
-    print(total)
+    add = 0
+    for arg in args:
+        add += int(s)
+        print("{:d}".format(add))
