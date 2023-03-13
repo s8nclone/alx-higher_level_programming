@@ -6,4 +6,4 @@ if __name__ == "__main__":
     add = 0
     for arg in range(len(args) - 1):
         add += int(args[i + 1])
-    print("{:d}".format(add))
+        print("{:d}".format(add))
