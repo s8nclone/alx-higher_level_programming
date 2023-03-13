@@ -11,7 +11,7 @@ if __name__ == "__main__":
             print("{:d} arguments:".format(num))
         i = 1
         while i <= num:
-            print("{:d}: {:s}".format(i, arv[i]))
+            print("{:d}: {:s}".format(i, argv[i]))
             i += 1
 
     if __name__ == "__main__":
