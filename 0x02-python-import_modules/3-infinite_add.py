@@ -14,5 +14,10 @@ def add_arg(argv):
 
 
 if __name__ == "__main__":
+
     import sys
-    add_arg(sys.argv)
+
+    sum = 0
+    for i in range(len(sys.arv) - 1):
+        sum += int(sys.argv[i + 1])
+    print("{}".format(sum))
