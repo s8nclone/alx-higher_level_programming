@@ -4,10 +4,10 @@ number = random.randint(-10000, 10000)
 last_num = abs(number) % 10
 if number < 0:
     last_num = -last_num
-    print(f"Last digit of {number} is ")
+    print("Last digit of {:d} is ".format(number), end="")
     if last_num > 5:
-        print(f'{last_num:d} and is greater than 5')
+        print("{:d} and is greater than 5".format(last_num))
     elif last_num == 0:
-        print(f'{last_num:d} and is 0')
+        print("{:d} and is 0".format(last_num))
     else:
-        print(f'{last_num:d} and is less than 6 and not 0')
+        print("{:d} and is less than 6 and not 0".format(last_num))
