@@ -2,4 +2,4 @@
 for i in (97, 123):
     if chr(i) == 'e' or chr(i) == 'q':
         continue
-    print("{}".format(chr(i)), end='')
+    print("{:s}".format(chr(i)), end='')
