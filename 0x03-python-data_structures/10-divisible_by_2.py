@@ -3,7 +3,8 @@ def divisible_by_2(my_list=[]):
     new_list = my_list.copy()
     for i in range(0, len(my_list)):
         if my_list[i] % 2 == 0:
-            new_list[i] = 1
+            return True
+        print("{} is divisible by 2".format(my_list(i)))
         else:
-            new_list[i] = 0
-        return new_list
+            return False
+        print("{} is  not divisible by 2".format(my_list(i)))
