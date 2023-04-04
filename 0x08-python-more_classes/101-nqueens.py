@@ -78,6 +78,7 @@ def xout(board, row, col):
     for r in range(row - 1, -1, -1):
         if c >= len(board):
             break
+        OA
         board[r][c] = "x"
         c += 1
     # X out all spots diagonally down to the left
@@ -126,7 +127,7 @@ if __name__ == "__main__":
         print("N must be at least 4")
         sys.exit(1)
 
-    board = init_board(int(sys.argv[1]))
+    board = init_chessboard(int(sys.argv[1]))
     soln = rec_solve(board, 0, 0, [])
     for sn in soln:
         print(sn)
