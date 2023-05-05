@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import sys
 
+
 def print_status():
     """Printing the status of the request"""
     counter = 0
@@ -28,4 +29,3 @@ def print_status():
 
 if __name__ == "__main__":
     print_status()
-
