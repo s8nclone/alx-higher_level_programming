@@ -2,11 +2,11 @@
 --The tv_genres tale contains only one record where name = Comedy
 -- Record must display tv_shows.title
 -- Records must be sorted in ascending order by the show title
-SELECT tv_shows.title AS title
-	FROM tv_show_genres
-	INNER JOIN tv_shows
+SELECT tv_shows.title As titles
+	FROM tv_shows
+	INNER JOIN tv_show_genres
 	ON tv_show_genres.show_id = tv_shows.id
 	INNER JOIN tv_genres
 	ON tv_genres.id = tv_show_genres.genre_id
 	AND tv_genres.name = 'Comedy'
-	ORDER BY title;
+	ORDER BY titles;
