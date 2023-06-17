@@ -2,10 +2,10 @@
 const firstArgv = parseInt(process.argv[2]);
 function factorial (firstArgv) {
   if (isNaN(firstArgv) || firstArgv === 1) {
-    console.log(1);
+    return (1);
   } else {
-    console.log(firstArgv * factorial(firstArgv - 1));
+    return (firstArgv * factorial(firstArgv - 1));
   }
 }
 
-factorial(firstArgv);
+console.log(factorial(firstArgv));
