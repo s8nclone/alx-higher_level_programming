@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const fs = require('fs');
 
-//Read from each file
+// Read from each file
 const firstFile = fs.readFileSync(process.argv[2], 'utf8');
 const secondFile = fs.readFileSync(process.argv[3], 'utf8');
 
