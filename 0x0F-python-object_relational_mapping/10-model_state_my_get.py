@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" Prints the State object with the name passed as an argument from the database
+""" 
+Prints the State object with the name
+passed as an argument from the database hbtn_0e_6_usa
 """
 import sys
 from model_state import Base, State
@@ -13,10 +15,8 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     sesh = sessionmaker(bind=engine)
     session = sesh()
-
-     for state in session.query(State):
-        if sys.argv[4] == state.name:
-            print("{}".format(state.id))
-            break
-    else:
+    instance = session.query(State).filter(State.name == (sys.argv[4],))
+    try:
+        print(instance[0].id)
+    except IndexError:
         print("Not found")
