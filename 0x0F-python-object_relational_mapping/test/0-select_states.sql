@@ -8,4 +8,4 @@ CREATE TABLE IF NOT EXISTS states (
   PRIMARY KEY (id)
 );
 
-INSERT INTO states (name) VALUES ("Hawaii"), ("Florida"), ("Ohio"), ("New York"), ("Columbia");
+INSERT INTO states (name) VALUES ("California"), ("Arizona"), ("Texas"), ("New York"), ("Nevada");
