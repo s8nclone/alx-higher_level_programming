@@ -13,8 +13,10 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     sesh = sessionmaker(bind=engine)
     session = sesh()
-    instance = session.query(State).filter(State.name == (sys.argv[4],))
-    try:
-        print(instance[0].id)
-    except IndexError:
+
+     for state in session.query(State):
+        if sys.argv[4] == state.name:
+            print("{}".format(state.id))
+            break
+    else:
         print("Not found")
