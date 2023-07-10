@@ -5,9 +5,9 @@ if __name__ == "__main__":
 
     with urllib.request.urlopen('https://alx-intranet.hbtn.io/status')\
             as response:
-        htmlFile = response.read()
+        htmlPg = response.read()
 
         print('Body response:')
-        print('\t- type: {}'.format(type(htmlFile)))
-        print('\t- content: {}'.format(htmlFile))
-        print('\t- utf8 content: {}'.format(htmlFile.decode("utf-8", "replace")))
+        print('\t- type: {}'.format(type(htmlPg)))
+        print('\t- content: {}'.format(htmlPg))
+        print('\t- utf8 content: {}'.format(htmlPg.decode("utf-8", "replace")))
