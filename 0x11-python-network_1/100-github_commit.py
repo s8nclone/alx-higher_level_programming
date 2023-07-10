@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-"""Python script that takes 2 arguments in order to solve given challenge."""
+"""
+Python script that takes 2 arguments in order to solve given challenge.
+- challenge: list 10 commits (from the most recent to oldest) of
+given repository
+"""
 import sys
 import requests
 
