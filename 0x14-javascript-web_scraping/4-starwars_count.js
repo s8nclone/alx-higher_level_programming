@@ -13,7 +13,7 @@ request.get(api + argv, (err, response, body) => {
     data.results.forEach((film) => {
       film.characters.forEach((character) => {
         if (character.includes(xterId)) {
-          count ++;
+          count++;
         }
       });
     });
