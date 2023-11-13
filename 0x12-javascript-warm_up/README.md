@@ -1,1 +1,1 @@
-This directory contains files on ALX-SE javasript warm up
+This directory contains files on Javascript warm up
