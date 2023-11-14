@@ -1,1 +1,1 @@
-This directory contains files on javascript objects, scopes and closures
+This repository contains files on javascript ojects, scopes and closures
